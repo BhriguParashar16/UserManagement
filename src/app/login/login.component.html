@@ -1,0 +1,39 @@
+<form [formGroup]="logInForm" (ngSubmit)="loginUser()">
+        <div class="grid-container">
+            <h3 class="mat-h1" align="center">LOG IN</h3>
+            <mat-card-content class="dashboard-card-content">
+              <table align="center">
+               <tr>
+                 <td>
+                  <div>Email :</div>
+                 </td>
+                 <td>
+                 <div>  
+                    <mat-form-field >
+                        <input matInput type="email"  placeholder="Enter Email" required formControlName="email">
+                      </mat-form-field>
+                 </div>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                     <div>Password :</div>
+                    </td>
+                    <td>
+                    <div>  
+                       <mat-form-field >
+                           <input matInput type="password" placeholder="Enter Password" required formControlName="password">
+                         </mat-form-field>
+                    </div>
+                   </td>
+                   </tr>
+                   <tr >
+                     <td></td>
+                     <td>
+                      <button mat-raised-button color="accent">Log In</button>
+                     </td> 
+                  </tr>
+                </table>
+              </mat-card-content>
+        </div>
+  </form>

@@ -1,0 +1,72 @@
+<form [formGroup]="registerForm" (ngSubmit)="registerUser()" validate>
+<div class="grid-container">
+        <h1 class="mat-h1" align="center">LOG IN</h1>
+        <mat-card-content class="dashboard-card-content">
+          <table align="center">
+           <tr>
+             <td>
+              <div>User Name :</div>
+             </td>
+             <td>
+              <div>  
+                <mat-form-field>
+                    <input matInput type="text" placeholder="Enter User Name" required  formControlName="username">
+                  </mat-form-field>
+              </div>
+            </td>
+            </tr>
+            <tr>
+                    <td>
+                     <div>First Name :</div>
+                    </td>
+                    <td>
+                     <div>  
+                       <mat-form-field>
+                           <input matInput placeholder="Enter First Name" required  formControlName="first_name">
+                         </mat-form-field>
+                     </div>
+                   </td>
+             </tr>
+             <tr>
+                    <td>
+                     <div>Last Name :</div>
+                    </td>
+                    <td>
+                     <div>  
+                       <mat-form-field>
+                           <input matInput placeholder="Enter Last Name" required  formControlName="last_name">
+                         </mat-form-field>
+                     </div>
+                   </td>
+             </tr>
+             <tr>
+                    <td>
+                     <div>Email :</div>
+                    </td>
+                    <td>
+                     <div>  
+                       <mat-form-field>
+                           <input matInput type="email" placeholder="Enter E-mail" required  formControlName="email">
+                         </mat-form-field>
+                     </div>
+                   </td>
+            </tr>
+             <tr>
+                    <td>
+                     <div>Password :</div>
+                    </td>
+                    <td>
+                     <div>  
+                       <mat-form-field>
+                           <input matInput type="password" maxlength="10" placeholder="Enter Password" required  formControlName="password">
+                         </mat-form-field>
+                     </div>
+                   </td>
+             </tr>
+            <tr align="center">
+                  <button mat-button>Register</button>
+               </tr>
+            </table>
+          </mat-card-content>
+    </div>
+</form>
